@@ -1,0 +1,34 @@
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="mhwbdPU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Armor</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.BirdWyvern</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.BruteWyvern</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Canteen</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Pcharacter</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Charm</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.ElderDragon</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Equipment</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.FangedWyvern</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Gadget</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.HuntingField</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Location</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.MeleeWpn</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Monster</class>	
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.MonsterType</class>	
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Palico</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.PiscineWyvern</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.RangedWpn</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Smithy</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.TrainingArea</class>
+		<class>br.edu.unifei.ecot13.lucasdias.mhw.Weapon</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mhwbd?zeroDateTimeBehavior=convertToNull" />
+			<property name="javax.persistence.jdbc.user" value="mhwbd" />
+			<property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.password" value="mhwbd" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect" />
+			<property name="javax.persistence.schema-generation.database.action" value="create" />
+		</properties>
+	</persistence-unit>
+</persistence>
